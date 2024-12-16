@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navbar</title>
+
+    <style>
+        *
+        {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        ul
+        {
+            list-style: none;
+            display: flex;
+        }
+        ul li
+        {
+            margin: 0 10px;
+            border-right: 1px solid #999;
+            padding-right: 35px;
+            margin-top: 10px;
+        }
+        ul li:nth-child(n)
+        {
+            border: 0;
+            padding-right: 0;
+        }
+
+        ul li a
+        {
+            text-decoration: none;
+            color: #000;
+            background-color: #999;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        ul li :hover
+        {
+            color: blue;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">HOME</a></li>
+        <li><a href="">ABOUT US</a></li>
+        <li><a href="">COURSES</a></li>
+        <li><a href="">SERVICES</a></li>
+        <li><a href="">CONTACT</a></li>
+    </ul>
+</body>
+</html>

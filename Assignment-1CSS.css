@@ -1,0 +1,50 @@
+body{
+    padding: 15px;
+}
+h1
+{
+    text-align: center;
+    font-family: sans-serif;
+}
+p.describe
+{
+    font-family: sans-serif;
+    margin: 0px;
+}
+.describe-name{
+    font-weight: bold;
+    font-family: sans-serif;
+    font-size: 25px;
+    margin-bottom: 0px;
+}
+.describe-other
+{
+    position: relative;
+    top: -38px;
+    text-align: right;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.container
+{
+    font-family: sans-serif;
+}
+.objective{
+    border-color: bisque;
+}
+.objective ul li{
+    list-style-type: disclosure-closed;
+}
+table
+{
+    border-collapse: collapse;
+    width: 1440px;
+}
+table th
+{
+    text-align: left;
+}
+table, th,td
+{
+    border: 1px solid gray;
+}

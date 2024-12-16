@@ -1,0 +1,41 @@
+header
+{
+    border-bottom: 1px black;
+}
+.logo
+{
+    width: 170px;
+    margin-left: 10px;
+}
+        ul
+        {
+            list-style: none;
+            display: flex;
+        }
+        ul li
+        {
+            margin: 0 10px;
+            border-right: 1px solid #999;
+            padding-right: 35px;
+            margin-top: 10px;
+        }
+        ul li:nth-child(n)
+        {
+            border: 0;
+            padding-right: 0;
+        }
+
+        ul li a
+        
+        {
+            text-decoration: none;
+            color: #000;
+            background-color: #999;
+            padding: 5px 10px;
+            border-radius: 10px;
+        }
+        ul li :hover
+        {
+            color: blue;
+            background-color: antiquewhite;
+        }
