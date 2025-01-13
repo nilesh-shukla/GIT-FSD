@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum, assumenda voluptatum et quidem ipsum harum eius iusto tenetur placeat dicta maiores rem sed fugit natus cumque illo reiciendis cum itaque maxime excepturi laborum culpa amet alias? Sit in, illum tempora quibusdam ea reprehenderit minus modi animi similique iusto eos laborum?</p>
+    <script>
+        // create element
+        const heading=document.createElement("h1");
+
+        //get element
+        const bodytag=document.getElementsByTagName("body");
+
+        //append heading in reference of body tag
+        bodytag[0].append(heading);
+
+        heading.innerText="heading h1 is created";
+
+        heading.style.color="red";
+        
+        //create heading 2
+        const heading2=document.createElement("h2");
+
+        //get element
+        const para=document.getElementsByTagName("p");
+    </script>
+</body>
+</html>
