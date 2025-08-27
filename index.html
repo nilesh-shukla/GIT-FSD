@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function validateForm()
+        {
+            var txtInput=document.getElementById('userInput').value;
+            var alfaTxt=/^[a-zA-Z]+$/;
+            var pwd=document.getElementById('userPassword').value;
+            if((!txtInput.match(alfaTxt)) || txtInput.length<6)
+            {
+                alert("Please Enter Only Charcters, length of 6 ");
+            }
+            else if(pwd.length<6)
+            {
+                alert("Please Enter Password atleast length of 6");
+            }
+            else{
+                alert('Success Data');
+            }
+        }
+    </script>
+    <div class="container">
+        <img src="./teenager-studying-cartoon-vector-26978727.jpg" alt="studying">
+        <div class="fields">
+
+            <h3>MASTERY HUB</h3>
+            <label for="">Username or Email:</label>
+            <input type="text" placeholder="Username" id="userInput"><br>
+
+            <label for="">Password:</label>
+            <input type="password" placeholder="Password" id="userPassword"><br>
+
+            <a href="#">Forgot Password</a>
+
+        <input type="submit" onclick="validateForm()">
+    </div>
+    </div>
+</body>
+</html>
