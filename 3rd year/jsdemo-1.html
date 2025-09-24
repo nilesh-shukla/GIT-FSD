@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #nil{
+            border: 2px solid red;
+            height: 200px;
+            width: 200px;
+            background-color: chocolate;
+        }
+    </style>
+</head>
+<body>
+    <script>
+        // var a=15
+        // if(a%2==0){
+        //     document.write(" even")
+        // }
+        // else{
+        //     document.write("odd")
+        // }
+
+        // function abes() {
+        //     document.getElementById("aaa").innerHTML="Hello";
+        // }
+
+
+        function red(){
+            document.getElementById("aaa").style.backgroundColor="red";
+        }
+        function green(){
+            document.getElementsById("aaa").style.backgroundColor="green";
+        }
+        function blue(){
+            document.getElementsById("aaa").style.backgroundColor="blue";
+        }
+        
+    </script>
+
+    <button id="red" onclick="red()">RED</button>
+    <button id="green" onclick="green()">GREEN</button>
+    <button id="blue" onclick="blue()">BLUE</button>
+
+    <p id="aaa">Hello</p>
+    
+</body>
+</html>

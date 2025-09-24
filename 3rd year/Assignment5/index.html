@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="square-box">
+        <button id="showBtn">Click Me</button>
+        <div id="message">hello</div>
+    </div>
+    <!-- <div style="text-align:center; margin-top:30px;">
+        <button class="color-btn" style="background:red; color:white;" id="redBtn">Red</button>
+        <button class="color-btn" style="background:blue; color:white;" id="blueBtn">Blue</button>
+        <button class="color-btn" style="background:green; color:white;" id="greenBtn">Green</button>
+    </div> -->
+
+    <!-- Counter App -->
+    <div class="counter-app">
+        <img src="logo.png" alt="Logo" class="counter-logo">
+        <h2 class="counter-name">Counter App</h2>
+        <div class="counter-value" id="counterValue">0</div>
+        <div>
+            <button class="counter-btn" id="decrementBtn">-</button>
+            <button class="counter-btn" id="incrementBtn">+</button>
+        </div>
+    </div>
+
+    <style>
+        .square-box {
+            width: 200px;
+            height: 200px;
+            border: 2px solid #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            margin: 50px auto;
+        }
+        #message {
+            margin-top: 15px;
+            color: #007bff;
+            font-weight: bold;
+            display: none;
+        }
+        .color-btn {
+            width: 80px;
+            height: 40px;
+            margin: 0 10px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        .counter-app {
+            margin: 40px auto 0 auto;
+            text-align: center;
+            padding: 20px;
+            border: 2px solid #ccc;
+            border-radius: 10px;
+            width: 250px;
+            background: #f9f9f9;
+        }
+        .counter-logo {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 10px;
+        }
+        .counter-name {
+            margin: 0 0 10px 0;
+            font-size: 22px;
+        }
+        .counter-value {
+            font-size: 32px;
+            margin: 10px 0;
+            font-weight: bold;
+        }
+        .counter-btn {
+            width: 50px;
+            height: 40px;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 22px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .counter-btn:hover {
+            background: #0056b3;
+        }
+    </style>
+    <script>
+        document.getElementById('showBtn').onclick = function() {
+            document.getElementById('message').style.display = 'block';
+        };
+        document.getElementById('redBtn').onclick = function() {
+            document.body.style.background = 'red';
+        };
+        document.getElementById('blueBtn').onclick = function() {
+            document.body.style.background = 'blue';
+        };
+        document.getElementById('greenBtn').onclick = function() {
+            document.body.style.background = 'green';
+        };
+        
+        let counter = 0;
+        document.getElementById('incrementBtn').onclick = function() {
+            counter++;
+            document.getElementById('counterValue').textContent = counter;
+        };
+        document.getElementById('decrementBtn').onclick = function() {
+            counter--;
+            document.getElementById('counterValue').textContent = counter;
+        };
+    </script>
+</body>
+</html>
+</body>
+</html>

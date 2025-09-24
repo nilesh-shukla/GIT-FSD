@@ -1,0 +1,23 @@
+body{
+    margin: 2%;
+    font-family: 'Outfit', sans-serif;
+}
+
+.navbar{
+    padding:2%;
+    width: auto;
+    display: flex;
+    gap: 2%;
+    justify-content: center;
+}
+
+.navbar input{
+    padding: 5px;
+    background-color: #a5bcc2;
+    border-color: transparent;
+    border-radius: 8px;
+}
+
+.navButtons{
+    display: flex;
+}
